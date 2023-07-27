@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -27,9 +27,168 @@ form {
 }
 
 /* Code for exercise 01-navbar */
+nav {
+  background-color: var(--black);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* mobile phones */
+@media (min-width: 415px) {
+  nav ul {
+    text-align: right;
+  }
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li a {
+  display: block;
+  margin: 10px 10px;
+  padding: 10px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+nav ul li:hover {
+  background-color: var(--violetred);
+}
 
 /* Code for exercise 02-cards */
 
+.card {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--black);
+  width: 23em;
+  display: inline-block;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.link1 a {
+  margin: 10px 10px;
+  padding: 10px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link1 {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--black);
+}
+
+.link1:hover {
+  background-color: var(--violetred);
+}
+
 /* Code for exercise 03-table */
 
+thead th {
+  background-color: black;
+  color: var(--white);
+  padding: 15px;
+  width: 11em;
+}
+
+tr td {
+  padding: 15px;
+  border: 1px solid var(--black);
+}
+
+.Channels {
+  background-color: var(--violetred);
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+}
+
+table tr:hover {
+  background-color: var(--orange);
+}
+
 /* Code for exercise 04-form */
+
+#mydiv {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 2%;
+  padding: 1em;
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Add some space between each div */
+}
+
+label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+input {
+  flex: 2;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+fieldset div {
+  display: block;
+}
+
+form p {
+  color: var(--gray);
+}
+
+.inputs {
+  font-weight: bold;
+}
+
+.options {
+  width: 150px;
+}
+
+#submit {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 0.8em;
+  width: 11.5em;
+  height: 2.7em;
+}
+
+#reset {
+  background-color: var(--white);
+  color: var(--black);
+  width: 11.5em;
+  height: 2.7em;
+  font-size: 0.8em;
+}
+
+#submit:hover {
+  background-color: var(--violetred);
+}
+
+#reset:hover {
+  background-color: var(--gray);
+}
