@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2em;
   color: var(--black);
 }
@@ -34,6 +34,16 @@ form {
 }
 
 /* Code for exercise 01-hello */
+#selfImg {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+#bio {
+  margin: 20px auto;
+  width: 300px;
+}
 
 /* Code for exercise 02-form */
 
@@ -50,4 +60,53 @@ form {
 .btn {
   width: 80px;
   padding: 10px;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn:hover {
+  background-color: var(--violetred);
+}
+
+.name {
+  grid-area: name;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.cost {
+  grid-area: cost;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.manufacturer {
+  grid-area: manufacturer;
+  text-align: left;
+  margin: 0;
+}
+
+.maxAS {
+  grid-area: maxAS;
+  text-align: center;
+  border-right: 2px solid gray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.capacity {
+  grid-area: capacity;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "name cost"
+    "manufacturer manufacturer"
+    "maxAS  capacity";
 }

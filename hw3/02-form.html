@@ -5,13 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>02 - Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../hw2/styles.css" />
     <script defer src="02-form.js"></script>
   </head>
   <body>
     <main>
       <h1>Exercise 02 - Form</h1>
       <!-- You can reuse the form you created in HW 2 -->
+      <div id="mydiv">
+        <!--  <form action="/submit"> -->
+        <form>
+          <h2>Sign Up Form</h2>
+          <p>Fill up the items in the form below.</p>
+          <div>
+            <label for="name" class="inputs">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div>
+            <label for="username" class="inputs">Username:</label>
+            <input
+              class="options"
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div>
+            <label for="email" class="inputs">Email:</label>
+            <input
+              class="options"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="name@pdx.edu"
+              required
+            />
+          </div>
+          <div>
+            <label for="password" class="inputs">Password: </label>
+            <input
+              class="options"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="********"
+              required
+            />
+          </div>
+          <div>
+            <label for="dob" class="inputs">Date of Birth:</label>
+            <input class="options" type="date" name="dob" id="dob" required />
+          </div>
+
+          <fieldset>
+            <legend class="inputs">Preferred Pronouns</legend>
+            <div>
+              <input
+                class="pronouns"
+                type="radio"
+                id="she"
+                name="pronouns"
+                value="She/Her"
+              />
+              <label for="she">She/Her</label>
+            </div>
+            <div>
+              <input
+                class="pronouns"
+                type="radio"
+                id="he"
+                name="pronouns"
+                value="He/Him"
+              />
+              <label for="he">He/Him</label>
+            </div>
+            <div>
+              <input
+                class="pronouns"
+                type="radio"
+                id="they"
+                name="pronouns"
+                value="They/Them"
+              />
+              <label for="they">They/Them</label>
+            </div>
+            <div>
+              <input
+                class="pronouns"
+                type="radio"
+                id="prefer"
+                name="pronouns"
+                value="I prefer not to say"
+              />
+              <label for="prefer">I prefer not to say</label>
+            </div>
+          </fieldset>
+          <br />
+          <br />
+          <div id="choices">
+            <input id="submit" type="submit" value="Submit" />
+            <input id="reset" type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
